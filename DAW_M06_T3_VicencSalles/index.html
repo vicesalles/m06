@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Concesionario</title>
+	<link rel="stylesheet" href="./concesionario.css" />
+	<script type="text/javascript" src="./concesionario.js"></script>
+</head>
+
+<body>
+	<script>
+        //Ejecuto el código proporcionado
+
+        //COCHE
+        var coche = new Coche();
+        coche.nombre = "Fantastico";
+        coche.precio = "70000€";
+        document.write('<br />Nompre Coche: ');
+        document.write(coche.nombre);
+        document.write('<br />Precio: ');
+        document.write(coche.precio);
+        var numExtra = coche.addExtra("Airbag");
+        //Añado un par de lineas para que se muestre el extra recién añadido
+        document.write('<br />Extra: ');
+        document.write(coche.getExtra(numExtra-1));
+        document.write('<br />================================================');
+    </script>
+
+	<script>
+   /*Código de comprovación de Concesionario*/
+    var myConcesionario= new Concesionario();
+    myConcesionario.setNombre("Mario Kart");
+    myConcesionario.setDireccion("c/Mushroom Kingdom 1");
+
+    var coche = new Coche();
+    coche.nombre="Fantastico!";
+    coche.precio="70000€";
+    var numExtra = coche.addExtra("Airbag");
+
+    var posicionComanda = myConcesionario.addComanda(coche);
+ 
+    document.write('<br />Nombre Concesionario: ');
+    document.write(myConcesionario.nombre);
+    document.write('<br />Direccion: ');
+    document.write(myConcesionario.direccion);
+    document.write('<br /> Nombre coche: ');
+    document.write(myConcesionario.comanda[posicionComanda-1].nombre);
+    document.write('<br /> Nombre extra: ');
+    document.write(myConcesionario.comanda[posicionComanda-1].extras[numExtra-1]);
+
+</script>
+
+	<div id="myCon">
+		
+	
+
+	</div>
+
+    <h1>ejercicio 7</h1>
+    <div id="ej7">
+        
+    </div>
+
+</body>
+
+</html>

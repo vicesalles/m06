@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>M06 Actividad 4 - Vicenç Sallés</title>
+    <link rel="stylesheet" href="formulario.css"/>
+    <script type="text/javascript" src="formulario.js"></script>
+</head>
+<body>
+
+    <form id="miForm">
+        <label for="nProducto">Nombre del Producto</label>
+        <input class="in" type="text" name="nProducto" placeholder="Nombre del producto"/> <br/>
+        <label for="codigo">Código de Barras</label>
+        <input class="in" type="number" name="codigo" placeholder="Introduce el código" maxlength="13" /> <br/>
+        <label>Caducidad:</label>
+        <label for="dia">Dia</label>
+        <input class="in" type="number" name="dia" placeholder="dia" maxlength="2"/>
+        <label for="mes">Mes</label>
+        <input class="in" type="number" name="mes" placeholder="mes" maxlength="2"/>
+        <label for="any">Año</label>
+        <input class="in" type="number" name="any" placeholder="año" minlength="4" maxlength="4"/><br/>
+        <label for="oferta">Oferta</label>
+        <select id="oferta" name="oferta">
+            <option value="Normal">Normal</option>
+            <option value="2x1">2x1</option>
+            <option value="20%">20%</option>
+            <option value="10%">10%</option>
+        </select> <br/>
+
+        <label for="tipo">Congelado</label>
+        <input id="congelado" class="tipo" type="checkbox" name="tipo" value="congelado"/>
+        <label for="tipo">Fruta</label>
+        <input id="fruta" class="tipo" type="checkbox" name="tipo" value="fruta"/>
+        <label for="tipo">Snack</label>
+        <input id="snack" class="tipo" type="checkbox" name="tipo" value="snack"/> <br/>
+        <input type="submit" value="Registrate" name="registrate"/>
+        <input class="bu" type="button" onclick="reset();" value="Limpia el Formulario" name="limpiar"/>
+        <input class="bu" type="button" value="Guardar Datos" onclick="guardarCookies();" name="guardar"/>
+        <input class="bu" type="button" value="Recuperar Datos" onclick="cargar();" name="recuperar"/><br/>
+
+        <textarea id="ta" rows="5" cols="25" name="output" placeholder="Consola"> </textarea>
+
+
+    </form>
+    
+</body>
+</html>

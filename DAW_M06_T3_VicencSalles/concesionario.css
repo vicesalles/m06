@@ -1,0 +1,86 @@
+#myCon{
+    width: 80;
+    margin: 10%;
+    
+}
+
+
+#myCon .linia{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+#myCon .linia h2{
+    width: 100%;
+    text-align: center;
+    background-color: lemonchiffon;
+    font-family: Arial, Helvetica, sans-serif;
+    color:darkmagenta;
+}
+
+
+#myCon .linia div{
+    margin:0em 1em 0em 1em;
+    font-family: monospace;
+    width: 100%;
+}
+
+#myCon ul{
+    list-style-type:none;
+}
+
+
+.cap{
+    font-weight: bold;
+    border-bottom-style: solid;
+    border-bottom-color: darkmagenta;
+    border-bottom-width: 0.2px;
+    padding-top: 1em;
+    }
+
+.item{
+    margin-top: 0.5em;
+    border-bottom-style: dashed;
+    border-bottom-color: darkmagenta;
+    border-bottom-width: 0.2px;
+}
+
+
+#ej7{
+    width: 80;
+    margin: 10%;
+    
+}
+
+
+#ej7 .linia{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+#ej7 .linia h2{
+    width: 100%;
+    text-align: center;
+    background-color: lemonchiffon;
+    font-family: Arial, Helvetica, sans-serif;
+    color:darkmagenta;
+}
+
+
+#ej7 .linia div{
+    margin:0em 1em 0em 1em;
+    font-family: monospace;
+    width: 100%;
+}
+
+#ej7 ul{
+    list-style-type:none;
+}
+
+#ej7 img{
+
+    max-width: 13px;
+    max-height: 13px;
+}
