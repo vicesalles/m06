@@ -1,0 +1,108 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 10/01/2017, 07:45:46
+    Author     : vscu
+*/
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;  
+    height: 100%;
+
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;  
+}
+
+footer{
+    position: fixed;
+    width: 100%;
+    bottom: 0px;
+    left: 0px;
+    margin-bottom: 0px;
+    background-color: orange;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-family: sans-serif;
+    padding-top: 1em;
+    padding-bottom:1em;
+    color: white;
+    font-weight: bold;
+    font-size: 0.8em;
+    overflow-y: hidden;
+}
+
+.puntos{
+    background-color: white;
+    color: orange;
+    min-width: 3em;
+    padding: 1.5em 1em 1.5em 1em;
+    overflow-y: no-display;
+    font-weight: bold;
+    overflow-y: hidden;
+    
+    
+}
+
+.clk{
+    background-color: orange;
+    color: white;
+    padding: 1em 2.5em 1em 2.5em;
+    font-family: sans-serif;
+    text-align: center;
+    letter-spacing: 0.5em;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+.clk:hover{
+    background-color: white;
+    color: orange;
+    padding: 0.7em 2.5em 0.7em 2.5em;
+    border: 0.3em solid orange;
+    cursor:pointer;
+    font-weight: bold;
+}
+
+input{
+    margin-top: 0.25em;
+    margin-bottom: 0.25em;
+    padding: 0.5em 2em 0.5em 2em;
+    min-width: 200px;
+    text-align: center;
+    font-family: sans-serif;
+    border: 1px solid gray;
+    font-size: 3em;
+    color: gray;
+}
+
+#marcador{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    color:orange;
+    font-family:sans-serif;
+    text-transform: uppercase;
+    padding-top:2em;
+    text-align: center;
+
+}
+#encontrado{
+
+    font-size: 3em;
+    font-weight: bold;  
+    padding-bottom: 1em;
+
+}
+
+#mensaje{
+    letter-spacing: 1em;
+}

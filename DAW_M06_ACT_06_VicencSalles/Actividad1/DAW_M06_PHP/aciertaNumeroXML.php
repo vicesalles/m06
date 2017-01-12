@@ -9,20 +9,20 @@ if(isset($_GET['inicio'])){     //se ha indicado iniciar un nuevo juego
         $_SESSION['numeroOculto'] = $numeroAleatorio;
         $xml .= "<inicio>".$_SESSION['numeroOculto']."</inicio>" . "\n";//retornamos el numero generado
 }else{
-
+    
     $numeroUsuario = $_GET['numero'];
     $numeroOculto=$_SESSION['numeroOculto'];
     
     if($numeroUsuario > $numeroOculto ){
         $xml .= "<encontrado>no</encontrado>" . "\n";
-        $xml .= "<mensaje>Has introducido un valor demasiado alto"."s</mensaje>" . "\n";
+        $xml .= "<mensaje>Has introducido un valor demasiado alto"."</mensaje>" . "\n";
     }else {
         if($numeroUsuario < $numeroOculto ){
             $xml .= "<encontrado>no</encontrado>" . "\n";
             $xml .= "<mensaje>Has introducido un valor demasiado bajo"."</mensaje>" . "\n";
         }else{
               $xml .= "<encontrado>si</encontrado>" . "\n";
-            $xml .= "<mensaje>Exacto!</mensaje>" . "\n";
+              $xml .= "<mensaje>Exacto!</mensaje>" . "\n";
         } 
         
     }
